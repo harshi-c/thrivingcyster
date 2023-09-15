@@ -1,0 +1,1428 @@
+body{
+    width: 80%;
+    font-family: 'Poppins';
+    margin: auto;
+}
+
+.disclaimer{
+    font-size: 16px;
+    padding: 14px;
+    background-color: #293275;
+    color: #fbd9db;
+    margin: 0%;
+    top: 0%;
+    position: sticky;
+    z-index: 2;
+}
+
+header{
+    background-image: url("../images/header.png");
+    background-size: contain;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    background-color: #e85760;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+nav li a {
+    color: #293275;
+    background-color: #fbd9db;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-right: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+  }
+  
+ 
+h1{
+    text-align: center;
+    font-size: 26px;
+
+}
+
+h2{
+    text-align: center;
+    font-size: 21px;
+}
+
+h3{
+    text-align: center;
+    font-size: 18px;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+    position: static;
+    z-index: 1;
+}
+
+
+.container-1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: #e85760 dotted 5px;
+}
+
+.intro{
+    width: fit-content;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fbd9db8c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #293275;
+    margin: 0%;
+}
+
+.intro-2{
+    width: fit-content;
+    text-decoration:underline;
+    text-decoration-style: double;
+    color: #e85760;
+    padding: 10px;
+    height: min-content;
+    margin: 0%;
+}
+
+
+.intro-2 img{
+    width: 80%;
+    margin: 0%;
+}
+
+@keyframes mythDisappear {
+    from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+   }  
+
+.mythsandfacts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 10px;
+    border-bottom: #e85760 dotted 5px;
+  }
+
+  .heading{
+    width: 100%;
+    text-align: center;
+    color: #293275;
+  }
+
+  .statement { 
+    cursor: pointer;
+    background: #293275;
+    color: #fbd9db;
+    text-align: center;
+    height: 60px;
+    width: 28%;
+    margin: 1%;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px 5px 10px 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .fact {
+    background-color: rgb(18, 89, 18);
+    color: #fbd9db;
+  }
+
+  .myth {
+    background-color: #b72831;
+    color: #fbd9db;
+    animation: mythDisappear 3s 1;
+  }
+
+  #refresh-btn2{
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: bold;
+    border: #e85760 solid 2px;
+    border-radius: 10px;
+    background-color: #fbd9db;
+    color: #293275;   
+    text-decoration: none;
+    padding: 10px 16px;
+    margin: 3px 10px 0px 0px;
+    box-shadow: 2px 2px #e8576194;
+    cursor: pointer;
+  }
+
+.container-2 {
+    color: #293275;
+    border-bottom: #e85760 dotted 5px;
+}
+
+.container-2 p{
+    padding: 0px 150px 0px 150px;  
+}
+
+.tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tabs a{
+    border-radius: 10px;
+    background-color: #fbd9db;
+    color: #293275;   
+    text-decoration: none;
+    padding: 10px 16px;
+    margin: 3px 10px 20px 10px;
+    box-shadow: 2px 2px #e8576194;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    border: #e85760 1px solid;
+} 
+
+
+.tablink.active {
+    background-color: #e857612a;
+    color: #293275;
+    border: #293275 2px solid;
+    box-shadow: 2px 2px #29327570;
+}
+
+
+.typeicon{
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+}
+
+.types{
+    color: #293275;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fbd9db;
+    margin-bottom: 20px;
+}
+
+.symptoms{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.symptoms img{
+    padding-left: 5px;
+}
+
+.types h2{
+    margin-top: 10px;
+}
+
+.container-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: #293275;
+    border-bottom: #e85760 dotted 5px;
+}
+
+.spoonful{
+    width: 45%;
+}
+
+.food-tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.food-sections{
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #fbd9db;
+    color: #293275;   
+    text-decoration: none;
+    padding: 10px 16px;
+    margin: 3px 10px 20px 10px;
+    box-shadow: 2px 2px #e8576194;
+    border: #e85760 solid 1px;
+} 
+
+.food-tips{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: space-evenly;
+    justify-items: center;
+}
+
+.food-tips p{
+    padding: 0px 15px 0px 15px;
+}
+
+.cure-tip{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    background-color: #e85760;
+    color: #fff;
+    margin: 1%;
+    font-size: smaller;
+    width: fit-content;
+    border-radius: 10px;
+
+}
+
+.tip{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    background-color: #293275;
+    color: #fbd9db;
+    font-size: smaller;
+    text-align: left;
+    border-radius: 10px;
+    padding: 1%;
+    margin: 1%;
+}
+
+.tip p{
+    margin: 0%;
+}
+
+.fatfirst{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: #fbd9db8c;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin: 1%;
+    width: 48%;
+    height: 410px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.supplements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbd9db8c;
+    border-radius: 10px;
+    margin: 1%;
+    width: 48%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.supplement h3{
+    text-decoration: underline;
+    color: #293275;
+    background-color: #fbd9db;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 3px;
+    box-shadow: 2px 2px #e8576194;
+    border: #e85760 1px solid;
+}
+
+.supplement{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.supplements-info{
+    display: none;
+    color: #293275;
+    border-radius: 10px;
+}
+
+
+
+.seedcycling{
+    background-color: #fbd9db8c;
+    border-radius: 10px;
+    margin: 1%;
+    width: 39%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 400px;
+}
+
+.seed-cycling-img{
+    width: 59%;
+}
+
+.avoidgluten{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: #fbd9db8c;
+    border-radius: 10px;
+    margin: 0.5%;
+    width: 34.5%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.avoiddairy{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: #fbd9db8c;
+    border-radius: 10px;
+    margin: 0.5%;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nosugar{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: #fbd9db8c;
+    border-radius: 10px;
+    margin: 0.5%;
+    width: 32%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.caffeine{
+    width: 100%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #e85760;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.caffeine h2{
+    margin-bottom: 0%;
+}
+
+.caffeine img{
+    padding: 5px;
+}
+
+
+.recipeslink{
+    padding: 20px;
+    width: 100%;
+    margin: 1%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipeslink a{
+    font-weight: bold;
+    border: #e85760 solid 2px;
+    border-radius: 10px;
+    background-color: #fbd9db;
+    color: #293275;   
+    text-decoration: none;
+    padding: 10px;
+    margin: 3px 10px 10px 10px;
+    box-shadow: 2px 2px #e8576194;
+}
+
+.container-4 {
+    color: #293275;
+    border-bottom: #e85760 dotted 5px;
+}
+
+
+.container-4 p{
+    padding: 0px 100px 20px 100px;  
+}
+
+.breathe{
+    display: block;
+    margin: 0 auto;
+}
+
+.yoga{
+    background-color: #fbd9db8c;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.yoga h2{
+    margin-top: 1%;
+}
+
+.slider-yoga {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 5px;
+  
+    .card {
+      flex: 0 0 auto;
+      background-color: #293275;
+      color: #fbd9db;
+      border-radius: 10px;
+      margin-right: 1%;
+      padding: 10px;
+      width: 34%;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .card:nth-child(1){
+    display: flex;
+    flex-direction: auto;
+    background-color: #fbd9db00;
+    justify-items: center;
+    align-items: center;
+    box-shadow: none;
+    width: 50px;
+  }
+
+  .exercise{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .workout-cycling-img{
+    width: 49%;
+    height: auto;
+  }
+
+  .workout-cycling{
+    background-color: #fbd9db8c;
+    border-radius: 10px;
+    margin: 1%;
+    width: 49%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .workout-cycling p{
+    padding: 20px;
+  }
+
+  
+  .exercise-tips{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: #fbd9db8c;
+    border-radius: 10px;
+    padding: 4px;
+    margin: 1%;
+    width: 46%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .exercise-tips p{
+    padding: 15px;
+  }
+
+  .managing-stress{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: #fbd9db8c;
+    border-radius: 10px;
+    padding: 4px;
+    margin: 1%;
+    width: 48%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .managing-stress p{
+    padding: 15px;
+  }
+
+  .quiz-link{
+    color: #293275;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: #e85760 dotted 5px;
+  }
+
+  .quiz-link h2{
+    padding: 0px 200px 0px 200px;
+  }
+
+  .quiz-link a{
+    font-family: 'Poppins';
+    border: #e85760 solid 2px;
+    border-radius: 10px;
+    background-color: #fbd9db;
+    color: #293275;   
+    text-decoration: none;
+    padding: 10px;
+    box-shadow: 2px 2px #e8576194;
+    margin-bottom: 10px;
+  }
+
+  footer{
+    padding: 5px 10px 10px 10px;
+    margin-top: 5px;
+    background-color: #293275;
+    border-radius: 10px;
+    color: #fbd9db;
+    height: 200px;
+  }
+
+  footer ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  footer li{
+    list-style-type: none;
+    width: 20%;
+    font-family: 'Poppins';
+    border-radius: 10px; 
+    padding: 10px;
+    border: #fbd9db dotted 1px;
+    cursor: pointer;
+    margin: 10px 10px 10px 0px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .credits{
+    color: #293275;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .cred-heart{
+    height: 18px;
+  }
+
+  @media only screen and (max-width: 425px) {
+    body{
+        width: 90%;
+    }
+    .disclaimer{
+        font-size: small;
+    }
+
+    nav{
+        height: fit-content; 
+
+    }
+
+    nav ul{
+        background-color: #293275;
+        padding: 10px;
+        flex-direction: column;
+        height: fit-content;
+        
+    }
+    nav li a{
+        background-color: #293275;
+        color: #fff;
+        padding: 5px 8px;
+        font-size: smaller;
+        box-shadow: none;
+    }
+
+    .mythsandfacts{
+        flex-direction: column;
+    }
+    .statement{
+        width: 100%;
+    }
+    .container-1{
+        flex-direction: column;
+    }
+
+    .container-2 p{
+        padding: 0px 5px 0px 5px;  
+    }
+
+    .tabs{
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: smaller;
+        margin: auto;
+    }
+
+    .tabs a{
+        margin: 1%;
+        padding: 8px;
+        width: 30%;
+        height: max-content;
+        font-size: smaller;
+    } 
+
+    .typeicon{
+        height: 20px;
+        width: 20px;
+        padding: 2px;
+    }
+
+    .types{
+        margin: 10px;
+    }
+    
+    .symptoms{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .symptoms img{
+        height: 80px;
+        width: 80px;
+        padding: 3px;
+    }
+
+    .container-3 p{
+        padding:  0px 5px 0px 5px;  
+    }
+
+    .food-tabs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-bottom: #e85760 2px dotted;
+    } 
+
+    .food-sections{
+        display: none;
+    }
+
+    .spoonful{
+        width: 70%;
+    }
+
+    .food-tips{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .fatfirst{
+        margin: 1%;
+        width: 100%;
+        height: auto;
+    }
+
+    .fatfirst img{
+        height: 60px;
+    }
+
+    .fatfirst p{
+        padding: 10px;
+    }
+
+    .seedcycling{
+        width: 100%;
+        height: fit-content;
+        margin: 1%;
+    }
+
+    .seedcycling p{
+        padding: 10px;
+        height: fit-content;
+    }
+
+    .seed-cycling-img{
+        height: fit-content;
+        width: 100%;
+        margin: 2%;
+    }
+
+    .avoidgluten{
+        width: 100%;
+        margin: 1%;
+        height: auto;
+    }
+
+    .avoidgluten p{
+        padding: 10px;
+    }
+
+    .avoiddairy{
+        width: 100%;
+        margin: 1%;
+        height: auto;
+    }
+
+    .avoiddairy p{
+        padding: 10px;
+    }
+
+    .nosugar{
+        width: 100%;
+        margin: 1%;
+        height: auto;
+    }
+
+    .nosugar p{
+        padding: 10px;
+    }
+
+    .supplements{
+        width: 100%;
+        margin: 1%;
+        height: auto;
+    }
+
+    .supplements p{
+        padding: 10px;
+    }
+
+    .recipeslink{
+        width: 92%;
+        margin: 1%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .container-4 p{
+        padding: 0px 10px 10px 10px;  
+    }
+    
+    .breathe{
+        display: block;
+        margin: 0 auto;
+        width: 65% ;
+    }
+    
+    .yoga h2{
+        margin-top: 1%;
+    }
+    
+    .slider-yoga {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 5px;
+      
+        .card {
+          padding: 10px;
+          width: 60%;
+          font-size: smaller;
+        }
+
+        .card img{
+            height: 120px;
+        }
+      }
+
+    
+    
+      .exercise{
+        flex-direction: column;
+      }
+
+      .exercise-tips{
+        width: 100%;
+      }
+
+      .managing-stress{
+        width: 100%;
+      }
+
+      .workout-cycling-img{
+        width: 100%;
+      }
+
+      .workout-cycling{
+        width: 100%;
+      }
+    
+      .quiz-link h2{
+        padding: 0px 20px 0px 20px;
+      }
+    
+      .quiz-link a{
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+
+      footer{
+        height: fit-content;
+      }
+
+      footer ul{
+        flex-direction: column;
+        justify-items: space-evenly;
+      }
+    
+      footer li{
+        width: 100%;
+        padding: 5px;
+      }
+
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        width: 90%;
+    }
+    .disclaimer{
+        font-size: small;
+    }
+
+    nav{
+        height: fit-content;
+    }
+
+    nav ul{
+        margin: 2%;
+        padding: 2%;
+        height: fit-content;
+    }
+    nav li a{
+        margin: 10px 5px 3px 0px;
+        display: block;
+    }
+
+    .statement{
+        width: 100%;
+    }
+    .container-1{
+        flex-direction: column;
+    }
+
+    .container-2 p{
+        padding: 0px 5px 0px 5px;  
+    }
+
+    .tabs{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .tabs a{
+        margin: 1%;
+        padding: 10px;
+        width: 30%;
+        height: 80px;
+    } 
+
+    .typeicon{
+        height: 50px;
+        width: 50px;
+        padding: 2px;
+    }
+
+    .types{
+        margin: 10px;
+    }
+    
+    .symptoms{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .symptoms img{
+        height: 100px;
+        width: 100px;
+        padding: 3px;
+    }
+
+    .container-3 p{
+        padding:  0px 5px 0px 5px;  
+    }
+
+    .food-tabs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-bottom: #e85760 2px dotted;
+    } 
+
+    .food-sections{
+        display: none;
+    }
+
+    .spoonful{
+        width: 70%;
+    }
+
+    .food-tips{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .fatfirst{
+        margin: 1%;
+        width: 100%;
+        height: auto;
+    }
+
+    .fatfirst img{
+        height: 60px;
+    }
+
+    .fatfirst p{
+        padding: 10px;
+    }
+
+    .seedcycling{
+        width: 100%;
+        height: fit-content;
+        margin: 1%;
+    }
+
+    .seedcycling p{
+        padding: 10px;
+        height: fit-content;
+    }
+
+    .seed-cycling-img{
+        height: fit-content;
+        width: 100%;
+        margin: 2%;
+    }
+
+    .avoidgluten{
+        width: 100%;
+        margin: 1%;
+        height: auto;
+    }
+
+    .avoidgluten p{
+        padding: 10px;
+    }
+
+    .avoiddairy{
+        width: 100%;
+        margin: 1%;
+        height: auto;
+    }
+
+    .avoiddairy p{
+        padding: 10px;
+    }
+
+    .nosugar{
+        width: 100%;
+        margin: 1%;
+        height: auto;
+    }
+
+    .nosugar p{
+        padding: 10px;
+    }
+
+    .supplements{
+        width: 100%;
+        margin: 1%;
+        height: auto;
+    }
+
+    .supplements p{
+        padding: 10px;
+    }
+
+    .recipeslink{
+        width: 92%;
+        margin: 1%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .container-4 p{
+        padding: 0px 10px 10px 10px;  
+    }
+    
+    .breathe{
+        display: block;
+        margin: 0 auto;
+        width: 65% ;
+    }
+    
+    .yoga h2{
+        margin-top: 1%;
+    }
+    
+    .slider-yoga {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 5px;
+      
+        .card {
+          padding: 10px;
+          width: 40%;
+          font-size: smaller;
+        }
+
+        .card:nth-child(1){
+            width: 100px;
+        }
+        .card:nth-child(1) img{
+            height: 80px;
+        }
+
+        .card img{
+            height: 150px;
+        }
+      }
+
+      .exercise{
+        flex-direction: column;
+      }
+
+      .exercise-tips{
+        width: 100%;
+      }
+
+      .managing-stress{
+        width: 100%;
+      }
+
+      .workout-cycling-img{
+        width: 100%;
+      }
+
+      .workout-cycling{
+        width: 100%;
+      }
+    
+      .quiz-link h2{
+        padding: 0px 20px 0px 20px;
+      }
+    
+      .quiz-link a{
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+
+      footer{
+        height: fit-content;
+      }
+
+      footer ul{
+        flex-direction: column;
+        justify-items: space-evenly;
+        flex-wrap: wrap;
+      }
+    
+      footer li{
+        width: 50%;
+        padding: 5px;
+      }
+
+}
+
+@media only screen and (max-width: 950px) {
+    body{
+        width: 90%;
+    }
+    .disclaimer{
+        font-size: small;
+    }
+
+    nav{
+        height: fit-content;
+    }
+
+    nav ul{
+        margin: 2%;
+        padding: 2%;
+        height: fit-content;
+    }
+    nav li a{
+        margin: 10px 5px 3px 0px;
+        display: block;
+    }
+
+    .statement{
+        width: 100%;
+    }
+    .container-1{
+        flex-direction: column;
+    }
+
+    .container-2 p{
+        padding: 0px 5px 0px 5px;  
+    }
+
+    .tabs{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .tabs a{
+        margin: 1%;
+        padding: 10px;
+        width: 30%;
+        height: 80px;
+    } 
+
+    .typeicon{
+        height: 50px;
+        width: 50px;
+        padding: 2px;
+    }
+
+    .types{
+        margin: 10px;
+    }
+    
+    .symptoms{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .symptoms img{
+        height: 100px;
+        width: 100px;
+        padding: 3px;
+    }
+
+    .container-3 p{
+        padding:  0px 5px 0px 5px;  
+    }
+
+    .food-tabs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-bottom: #e85760 2px dotted;
+    } 
+
+    .food-sections{
+        display: none;
+    }
+
+    .spoonful{
+        width: 70%;
+    }
+
+    .food-tips{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .fatfirst{
+        margin: 1%;
+        width: 100%;
+        height: auto;
+    }
+
+    .fatfirst img{
+        height: 60px;
+    }
+
+    .fatfirst p{
+        padding: 10px;
+    }
+
+    .seedcycling{
+        width: 100%;
+        height: fit-content;
+        margin: 1%;
+    }
+
+    .seedcycling p{
+        padding: 10px;
+        height: fit-content;
+    }
+
+    .seed-cycling-img{
+        height: fit-content;
+        width: 100%;
+        margin: 2%;
+    }
+
+    .avoidgluten{
+        width: 100%;
+        margin: 1%;
+        height: auto;
+    }
+
+    .avoidgluten p{
+        padding: 10px;
+    }
+
+    .avoiddairy{
+        width: 100%;
+        margin: 1%;
+        height: auto;
+    }
+
+    .avoiddairy p{
+        padding: 10px;
+    }
+
+    .nosugar{
+        width: 100%;
+        margin: 1%;
+        height: auto;
+    }
+
+    .nosugar p{
+        padding: 10px;
+    }
+
+    .supplements{
+        width: 100%;
+        margin: 1%;
+        height: auto;
+    }
+
+    .supplements p{
+        padding: 10px;
+    }
+
+    .recipeslink{
+        width: 92%;
+        margin: 1%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .container-4 p{
+        padding: 0px 10px 10px 10px;  
+    }
+    
+    .breathe{
+        display: block;
+        margin: 0 auto;
+        width: 65% ;
+    }
+    
+    .yoga h2{
+        margin-top: 1%;
+    }
+    
+    .slider-yoga {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 5px;
+      
+        .card {
+          padding: 10px;
+          width: 40%;
+          font-size: smaller;
+        }
+
+        .card:nth-child(1){
+            width: 100px;
+        }
+        .card:nth-child(1) img{
+            height: 80px;
+        }
+
+        .card img{
+            height: 150px;
+        }
+      }
+
+      .exercise{
+        flex-direction: column;
+      }
+
+      .exercise-tips{
+        width: 100%;
+      }
+
+      .managing-stress{
+        width: 100%;
+      }
+
+      .workout-cycling-img{
+        width: 100%;
+      }
+
+      .workout-cycling{
+        width: 100%;
+      }
+    
+      .quiz-link h2{
+        padding: 0px 20px 0px 20px;
+      }
+    
+      .quiz-link a{
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+
+      footer{
+        height: fit-content;
+      }
+
+      footer ul{
+        flex-direction: column;
+        justify-items: space-evenly;
+        flex-wrap: wrap;
+      }
+    
+      footer li{
+        width: 50%;
+        padding: 5px;
+      }
+
+}

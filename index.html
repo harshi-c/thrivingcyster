@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Living with PCOS: Management Tips & Tricks">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <title>Thriving Cyster</title>
+</head>
+<body>
+    <p class="disclaimer"> <strong>Disclaimer:</strong> The information provided on this website is not a medically approved way to manage PCOS. For more tailored and accurate advice, please consult your GP or a specialist. </p>
+    <header>
+        <img class="logo" src="images/logo.png" alt="thriving cyster logo">
+    </header>
+
+      <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#mythsandfacts">Bust PCOS Myths</a></li>
+        <li><a href="index.html#managing-tips">Managing Diet</a></li>
+        <li><a href="index.html#supplements">Supplements</a></li>
+        <li><a href="recipes.html">Cooking Tips</a></li>
+        <li><a href="recipes.html#recipes">Recipes</a></li>
+        <li><a href="index.html#managing-workout">Lifestyle + Workout</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+
+    <section class="container-1">
+        <div class="intro">
+            <h1>WHAT IS PCOS?</h1>
+            <p>Polycystic ovarian syndrome (PCOS) is one of the <strong>most prevalent hormonal disorders</strong> that affects females. It is characterized by the presence of ovarian cysts, irregular menstruation, and hormonal imbalances. </p>
+        </div>
+        <div class="intro-2">
+            <img src="images/oneinten.gif" alt="10 female icons with one highlighted">
+            <h2>1 IN 10 FEMALES ARE AFFECTED BY PCOS </h2>
+        </div>
+    </section>
+
+    <section class="mythsandfacts" id="mythsandfacts">
+      <div class="heading">
+      <h1>Fact or Fiction?</h1>
+      
+      <p><strong>Click on the statements and bust the myths!
+        <br><img src="images/fact-fiction-03.png" height="50px">
+        <br><img src="images/fact-fiction-01.png" height="18px" alt="red"> Fiction / <img src="images/fact-fiction-02.png" height="18px" alt="green"> Fact
+      </strong></p>
+      </div>
+
+      <div class="statement" onclick="checkFactOrMyth(this, false)">PCOS only affects women who are above 40 years of age.</div>
+      <div class="statement" onclick="checkFactOrMyth(this, false)">Fat-free diets are good for PCOS</div>
+      <div class="statement" onclick="checkFactOrMyth(this, true)">PCOS is a common condition.</div>
+      <div class="statement" onclick="checkFactOrMyth(this, false)">All women with PCOS have the same symptoms.</div>
+      <div class="statement" onclick="checkFactOrMyth(this, true)">Yoga helps with PCOS.</div>
+      <div class="statement" onclick="checkFactOrMyth(this, false)">Stress and sleep have no impact on PCOS.</div>
+      <div class="statement" onclick="checkFactOrMyth(this, false)">Women diagnosed with PCOS can't have children.</div>
+      <div class="statement" onclick="checkFactOrMyth(this, true)">PCOS can increase the risk of type 2 diabetes.</div>
+      <div class="statement" onclick="checkFactOrMyth(this, true)">It is possible to have more than one type of PCOS.</div>
+      <button type="button" id="refresh-btn2">Refresh</button>
+  </section>
+
+    <section class="container-2">
+        <h1>GET TO KNOW YOUR PCOS</h1>
+        <p><strong>Common symptoms of PCOS include: irregular periods, unwanted hair growth, acne and oily skin, weight gain, mood swings, painful periods and more.</strong></p>
+        <p>PCOS is categorized into four types, and knowing your specific type is essential for successful treatment and symptom relief. Since PCOS affects individuals uniquely, personalized approaches are crucial to manage it effectively. Seeking medical advice to identify your type and receive appropriate care is important, as it's possible to have more than one type of PCOS.</p>
+        <p> <strong>Click below</strong> <img src="images/click.png" height="30px"> on the types to find out more!</p>
+
+        <div class="tabs">
+            <a class="tablink" onclick="openType(this, 'InsulinResistance');">
+              <svg class="typeicon" id="uuid-b05ec903-ebfa-47e5-8fcd-505b5167b0a0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 193.06 278.89"><defs><style>.uuid-bc7466e5-e630-4b89-8745-8fc814790f80{fill:#293275;}</style></defs><g id="uuid-974a37a9-3ec5-4b1d-9297-b4ba3d24e2b9"><g id="uuid-6ed1fb01-22f0-446f-8659-3f37537ddcc0"><path class="uuid-bc7466e5-e630-4b89-8745-8fc814790f80" d="m183.02,234.21c2.42,0,4.47-.03,6.51,0,2.12.04,3.41.83,3.53,2.85.12,2.1-1.07,3.14-3.28,3.5-.5.08-1.03.03-1.54.03-23.8,0-47.6,0-71.41.04-2.24,0-3.81-.63-4.22-2.6-.53-2.55.75-3.74,3.85-3.83q6.66-.19,6.66-6.1c0-37.17.18-74.34-.13-111.51-.09-10.71,8.87-20.6,19.11-22.6,13.08-2.55,25.55-1.9,34.97,8.01,4.16,4.38,5.86,9.66,5.88,15.23.09,37.35.05,74.7.06,112.05,0,1.52,0,3.04,0,4.92Zm-40.63-66.83c-.44,1.76.59,2.18,2.38,2.16,4.71-.05,9.43-.02,14.21-.02v22.39h-16.54v2.51h16.58v22.47h-16.66c.11,2.5.11,2.54,2.48,2.56,4.7.03,9.41,0,14.39,0v14.35h17.44c0-1.21,0-2.27,0-3.32-.01-38.61-.24-77.23.15-115.84.07-7.24-11-13.06-17.82-11.52v13.89h-16.5v2.57h16.46v22.44h-16.44c.02,2.51.02,2.53,2.37,2.54,4.7.02,9.39,0,14.17,0v22.36h-16.12c-.18.15-.36.29-.54.44Z"/><path class="uuid-bc7466e5-e630-4b89-8745-8fc814790f80" d="m11.08,154.01c.57-1.78,1.18-3.56,1.7-5.35.2-.68.24-1.41.25-2.11.03-4.4-.03-8.8.04-13.21.06-3.69,1.15-4.65,5.31-4.66,15.05-.03,30.1-.04,45.16-.02,4.24,0,6.05,1.63,6.06,5.34.02,4.13-.06,8.27.05,12.4.05,2.02.63,4.04.57,6.05-.02.68-1.23,1.38-1.99,1.97-.67.51-2.13.89-2.11,1.31.04,1.24.15,3.07,1.07,3.62,9.84,5.88,15.26,13.94,15.32,24.28.18,29.1.08,58.21.05,87.32,0,4.89-3.77,7.92-9.86,7.94-15.88.03-31.75,0-47.63,0-5.46,0-10.93.01-16.39-.01-4.95-.02-8.23-2.68-8.55-6.94-.09-1.16-.02-2.33-.02-3.5,0-28.03.17-56.06-.1-84.08-.1-10.4,4.72-18.17,13.97-24.31,1.28-.85,3.96-1.7,1.92-3.86-.91-.96-2.24-1.63-3.37-2.43-.48.08-.95.17-1.43.25Zm48.98.64H22.75c0,1.04-.14,1.95.03,2.8.49,2.42-.74,3.78-3.03,5.1-8.38,4.81-13.38,11.33-13.35,20.46.1,29.18.03,58.36.05,87.54,0,3.55.1,3.62,4.15,3.62,20.3.01,40.6.01,60.9,0,4.23,0,4.78-.49,4.78-4.22,0-28.64.03-57.28-.06-85.92,0-2.52-.7-5.07-1.33-7.55-1.29-5.09-4.91-9.06-9.54-11.92-4.16-2.57-6.93-5.14-5.27-9.92Z"/><path class="uuid-bc7466e5-e630-4b89-8745-8fc814790f80" d="m166.47,243.91c.07,7.18.14,14.35.21,21.53,0,1.06,0,2.13,0,3.59,4.78,0,9.37-.06,13.97.04,1.37.03,2.77.39,4.1.76,2.92.82,3.81,2.78,3.28,5.21-.54,2.45-2.9,3.23-5.32,3.79-.48.11-1.03.04-1.54.04-18.97,0-37.94.02-56.9,0-3.78,0-6.41-1.69-6.7-4.16-.37-3.05,1.79-5.35,5.63-5.52,4.63-.2,9.27-.09,13.91-.12.6,0,1.21-.05,2.17-.1v-25.49h26.53c.22.14.45.29.67.43Z"/><path class="uuid-bc7466e5-e630-4b89-8745-8fc814790f80" d="m155.24,0v72.56c7.44,2,8.7,3.78,9.46,12.69,1.56.85,2.95,1.43,4.02,2.3.28.23-.22,1.59-.77,2.05-.65.55-1.75.97-2.67.97-8.24.06-16.48.1-24.72-.1-1.3-.03-3.3-1.06-3.67-2.01-.63-1.59.82-2.42,2.84-2.64.56-.06,1.31-1.64,1.25-2.48-.28-3.7,1.15-6.66,4.38-8.99.53-.38,1.16-.87,1.79-.92,3.7-.3,3.86-2.31,3.85-4.98-.12-21.18-.04-42.36-.13-63.55-.01-2.57,1.3-3.86,4.36-4.9Z"/><path class="uuid-bc7466e5-e630-4b89-8745-8fc814790f80" d="m130.97,16.99c1.05,5.29,3.63,9.67,7.39,13.55,5.64,5.8,5.03,12.76-.75,17.15-3,2.28-6.43,3.35-10.3,2.08-3.9-1.27-6.6-3.73-7.88-7.2-1.75-4.77.19-8.73,3.65-12.4,3.23-3.42,6.02-7.08,6.89-11.6.09-.48.56-.91,1-1.58Z"/><path class="uuid-bc7466e5-e630-4b89-8745-8fc814790f80" d="m166.47,243.91c-.22-.14-.45-.29-.67-.43.22.14.45.29.67.43Z"/><path class="uuid-bc7466e5-e630-4b89-8745-8fc814790f80" d="m142.93,166.94c-.18.15-.36.29-.54.44.18-.15.36-.29.54-.44Z"/><path class="uuid-bc7466e5-e630-4b89-8745-8fc814790f80" d="m10.94,187.8c4.84-.06,9.68-.16,14.52-.17,15.46-.02,30.92,0,46.61,0,.08.77.21,1.45.21,2.14.01,26.59,0,53.18,0,79.77,0,.44-.08.89-.13,1.33-.2.14-.39.29-.59.43H10.52c-.08-.66-.21-1.25-.21-1.85,0-26.57,0-53.15,0-79.72,0-.45.07-.89.11-1.34l.52-.59Zm9.9,35.41c.04,2.07,2.14,4.01,4.33,4,2.06-.01,4.95-2.38,4.98-4.08.04-2.2-2.37-4.03-5.28-4.01-2.26.02-4.07,1.85-4.03,4.09Zm8.86,20.72c-3.08-.09-4.46.93-4.48,2.92-.01,1.77.82,3.31,3.19,3.53,2.02.19,4.16-1.55,4.18-3.36.02-2.1-1.51-2.88-2.9-3.09Zm6.12-12.86c-.46.02-.92.05-1.38.07-.61.86-1.85,1.81-1.69,2.54.21.98,1.49,1.78,2.32,2.65,1.05-.85,2.62-1.57,2.96-2.6.21-.66-1.4-1.77-2.2-2.67Z"/><path class="uuid-bc7466e5-e630-4b89-8745-8fc814790f80" d="m10.94,187.8c-.17.2-.35.39-.52.59.17-.2.35-.39.52-.59Z"/><path class="uuid-bc7466e5-e630-4b89-8745-8fc814790f80" d="m71.56,271.29c.2-.14.39-.29.59-.43-.2.14-.39.29-.59.43Z"/></g></g></svg>
+              <div>Insulin Resistance</div>
+            </a>
+            <a class="tablink" onclick="openType(this, 'Inflammatory');">
+              <svg class="typeicon" id="uuid-55f6d02c-58da-499b-badb-b7da9fd0ef96" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284.36 284.81"><defs><style>.uuid-247e25ca-df45-4584-b28a-690f7e5d5fae,.uuid-2f8f3183-01ab-493e-ae09-a060c32c48a6,.uuid-6cefc6a3-2370-4580-8d39-53eb313e4d7e{fill:#293275;}.uuid-2f8f3183-01ab-493e-ae09-a060c32c48a6{opacity:.84;}.uuid-6cefc6a3-2370-4580-8d39-53eb313e4d7e{opacity:.76;}</style></defs><g id="uuid-fdd05cd5-d37b-4ce4-b282-4e6104f2de41"><g id="uuid-8a706313-4820-421c-b5b7-4f234f59f2ea"><path class="uuid-6cefc6a3-2370-4580-8d39-53eb313e4d7e" d="m141.86.35c12.34.01,24.49,1.61,36.45,4.6,6.37,1.59,12.67,3.48,18.65,6.27,4.86,2.26,9.79,4.39,14.55,6.85,6.07,3.14,11.69,7.02,17.14,11.16,6.39,4.84,12.35,10.15,17.79,16.02,6.09,6.58,11.68,13.57,16.32,21.26,2.7,4.48,5.18,9.11,7.46,13.82,1.95,4.03,3.5,8.25,5.19,12.41,2.94,7.23,4.9,14.75,6.22,22.42.74,4.33,1.11,8.73,1.82,13.07.87,5.37.94,10.76.92,16.17-.05,11.8-1.65,23.4-4.51,34.83-2.94,11.75-7.68,22.77-13.56,33.32-8.46,15.21-19.62,28.15-32.95,39.3-10.62,8.88-22.39,15.86-35.06,21.36-9.88,4.29-20.13,7.48-30.79,9.11-7.81,1.2-15.65,2.34-23.58,2.46-13.25.2-26.23-1.5-38.97-5.13-12.92-3.68-25.13-8.96-36.65-15.9-12.37-7.45-23.35-16.56-32.87-27.39-5.23-5.95-10.05-12.23-14.15-19.02-5.12-8.5-9.56-17.35-12.87-26.73-2.24-6.37-4.14-12.84-5.36-19.48-.53-2.86-.67-5.78-.99-8.68-.54-4.96-1.06-9.93-1.6-14.89-.6-5.57-.61-11.15.01-16.71.64-5.7,1.19-11.45,2.38-17.05,1.25-5.84,2.94-11.62,4.96-17.25,2.14-5.97,4.71-11.81,7.44-17.54,3.49-7.34,7.87-14.16,12.68-20.72,5.9-8.06,12.6-15.38,20.05-22.02,5.9-5.27,12.16-10.07,18.9-14.23,8.12-5.01,16.64-9.22,25.54-12.69,6.15-2.39,12.47-4.17,18.87-5.6,4.54-1.01,9.16-1.7,13.78-2.25,5.57-.66,11.18-1.02,16.77-1.51.01.12.02.24.03.35Zm123.46,144.62c-.28-4.78-.49-9.56-.85-14.33-.77-10.07-3.26-19.78-6.55-29.28-3.06-8.85-7.37-17.11-12.39-25-4.62-7.26-10.01-13.92-16-20.1-6.7-6.91-14.02-13.06-22.25-18.04-8.21-4.97-16.88-8.99-26.05-11.93-8.15-2.61-16.44-4.57-24.94-5.45-7.21-.75-14.44-.98-21.7-.64-9.34.45-18.41,2.21-27.36,4.76-8.15,2.32-15.9,5.67-23.34,9.72-14.29,7.79-26.59,17.99-36.85,30.61-5.29,6.51-9.84,13.53-13.67,21.01-3.42,6.68-6.44,13.54-8.42,20.8-1.39,5.09-2.68,10.22-3.73,15.38-.82,4.03-1.57,8.13-1.69,12.23-.22,7.22-.72,14.47.67,21.66.8,4.11,1.06,8.35,2.1,12.39,1.5,5.87,3.16,11.75,5.34,17.39,2.06,5.33,4.73,10.45,7.43,15.51,4.17,7.8,9.35,14.94,15.16,21.6,7.66,8.77,16.42,16.24,26.22,22.55,8.84,5.69,18.32,10.02,28.22,13.39,7.08,2.41,14.36,4.2,21.8,5.23,6.98.97,13.97,1.46,21.03.71,8.4-.89,16.8-1.84,25.05-3.7,6.38-1.44,12.54-3.63,18.54-6.2,3.84-1.65,7.49-3.74,11.22-5.66,5.65-2.9,10.89-6.45,15.84-10.39,5.63-4.48,11.01-9.24,15.78-14.69,6.22-7.1,11.71-14.68,16.24-22.96,4.52-8.26,7.92-16.95,10.41-26.02,2.75-10,4.67-20.11,4.74-30.54Z"/><path class="uuid-2f8f3183-01ab-493e-ae09-a060c32c48a6" d="m243.38,143.88c.45,7.59-.64,15.25-2.4,22.82-.82,3.52-2.07,6.93-3.12,10.39-1.85,6.1-4.81,11.7-8.03,17.14-5.49,9.27-12.24,17.53-20.46,24.55-8.67,7.4-18.33,13.14-28.92,17.28-7.88,3.08-16,5.39-24.38,6.78-6.24,1.04-12.49,1.49-18.78,1.15-8.04-.44-15.95-1.8-23.66-4.21-8.14-2.54-15.92-5.9-23.2-10.34-7.96-4.86-15.12-10.71-21.63-17.42-7.5-7.73-13.5-16.47-18.32-26.05-3.33-6.61-5.54-13.65-7.25-20.82-1.93-8.09-2.68-16.31-2.48-24.66.15-6.15.82-12.22,2-18.23,1.12-5.68,2.93-11.18,5.05-16.58,3.23-8.22,7.43-15.91,12.62-23.03,4.2-5.76,8.98-11.03,14.32-15.78,5.49-4.89,11.42-9.16,17.82-12.78,5.34-3.01,10.92-5.46,16.73-7.44,6.92-2.35,13.99-4.03,21.22-4.97,5.8-.76,11.63-.65,17.46-.29,7.21.45,14.29,1.63,21.28,3.44,11.86,3.07,22.73,8.27,32.71,15.31,6.55,4.62,12.45,10.03,17.6,16.18,3.74,4.47,7.28,9.11,9.94,14.34,2.52,4.96,5.28,9.84,7.34,15,1.87,4.68,3.16,9.64,4.29,14.56,1.77,7.69,2.52,15.52,2.24,23.64Zm-183.02.1c-.08,7.24.84,14.68,3.28,21.89.94,2.76,1.71,5.59,2.91,8.23,1.36,3.02,3.06,5.89,4.69,8.79,4.65,8.29,10.75,15.41,17.91,21.6,7.4,6.39,15.67,11.33,24.87,14.75,7.03,2.61,14.23,4.31,21.67,5.11,7.16.77,14.23-.09,21.24-1.39,7-1.3,13.8-3.39,20.28-6.42,6.82-3.19,13.17-7.11,18.87-12.04,4.44-3.85,8.49-8.04,12.03-12.76,4.07-5.43,7.5-11.25,10.01-17.5,1.97-4.91,3.44-10.08,4.62-15.25,1.09-4.8,1.72-9.74,2.12-14.65.23-2.89-.32-5.86-.62-8.78-.53-5.26-1.43-10.46-2.99-15.53-2.13-6.95-4.87-13.65-8.9-19.71-2.92-4.39-5.93-8.79-9.43-12.72-6.4-7.2-13.99-12.99-22.51-17.6-10.93-5.91-22.67-8.5-34.93-9.23-6.49-.39-12.86.4-19.21,1.68-6.26,1.26-12.38,2.93-18.2,5.59-8.41,3.85-15.83,9.14-22.52,15.5-10.83,10.3-18.01,22.75-22.17,37.03-2.19,7.53-3.18,15.22-3.02,23.41Z"/><path class="uuid-247e25ca-df45-4584-b28a-690f7e5d5fae" d="m203.42,141.76c-.05,9.82-2.12,18.48-6.01,26.74-6.55,13.9-17.03,23.62-31.1,29.59-7.87,3.34-16.09,5.2-24.63,5.3-6.87.09-13.57-1.17-20.05-3.56-8.54-3.16-16.02-8-22.32-14.51-5.87-6.06-10.4-13.05-13.48-20.97-4.14-10.66-5.27-21.59-3.36-32.86,1.03-6.05,3.14-11.73,6.01-17.11,3.5-6.54,7.98-12.35,13.58-17.24,6.1-5.32,12.83-9.67,20.61-12.08,10.85-3.36,21.8-4.57,33.06-1.58,8.08,2.15,15.57,5.36,22.35,10.16,7.72,5.46,13.96,12.3,18.37,20.72,4.6,8.79,6.84,18.17,6.95,27.4Z"/></g></g></svg>
+              <div>Inflammatory</div>
+            </a>
+            <a class="tablink" onclick="openType(this, 'Adrenal');">
+              <svg class="typeicon" id="uuid-a25254f8-7aea-4ccb-90ec-3ec1174bcfbc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172.4 260.56"><defs><style>.uuid-b027f8e9-9f03-4a7d-bf50-55d2314f526c{fill:#293275;}</style></defs><g id="uuid-97075831-879b-44da-a8f2-b216440c9770"><g id="uuid-6243acd2-640c-45ac-8ff9-86c506022018"><path class="uuid-b027f8e9-9f03-4a7d-bf50-55d2314f526c" d="m26.37,117.61c8.94-1.18,17.51-2.5,26.12-3.39,5.25-.54,10.57-.37,15.85-.63,1.02-.05,2.24-.37,2.96-1.02,1.8-1.62,3.37-3.5,5.25-5.51-.68,0-1.36.04-2.04,0-3.28-.22-6.66,0-9.81-.78-9.51-2.33-13.64-9.56-15.37-18.41-.89-4.57-1.08-9.27-1.61-14.14-.94-.19-2.13-.38-3.29-.69-5.94-1.61-9.74-5.65-11.82-11.19C23.46,37.43,36.97,2.74,71.3,1.47c14.26-.53,27.47,3.56,39.44,11.18,3.59,2.28,6.71,5.48,9.56,8.69,2.91,3.28,3.93,7.44,3.52,11.91-.08.83.38,2.07,1.02,2.55,14.22,10.62,24.47,24.49,32.67,39.99,2.71,5.12,4.94,10.51,7.22,15.85,1.59,3.72.78,6.2-2,7.2-2.7.97-4.67-.34-6.1-4.01-7.08-18.1-16.99-34.32-31.48-47.51-1.54-1.4-3.22-2.64-4.85-3.93-.26-.21-.6-.31-.88-.45-8.67,9.21-17.21,9-26.5,1.19-2.19,4.51-4.72,8.73-9.47,10.95-4.89,2.28-9.62,1.35-14.42-.96-.51,2.04-.92,3.97-1.47,5.85-1.55,5.3-4.44,9.54-9.47,12.17-.61.32-1.25,1.27-1.25,1.93-.03,5.56.2,11.1,2.24,16.4,1.96,5.09,5.59,8.07,11.07,7.81,4.72-.23,9.41-1.11,14.09-1.82,1.87-.29,3.68-.99,5.54-1.36,2.32-.46,4.42,0,5.54,2.3,1.16,2.37.25,4.34-1.58,6.04-4.19,3.9-8.38,7.81-12.52,11.77-2.5,2.4-4.97,4.85-7.35,7.37-11.07,11.75-15.42,26.5-18.35,41.81-5.45,28.55-6.06,57.41-5.22,86.35,0,.25.1.5.19.94h3.04c.47-6,.83-11.96,1.41-17.9,2.4-24.45,6.81-48.43,17.14-70.97,4.04-8.8,8.98-17.03,15.74-24.06,5.23-5.44,12.18-5.19,16.96.61,2.33,2.82,1.61,10.64-1.28,13.96-6.82,7.82-5.27,18.73,3.48,24.47,10.66,6.99,27.13,5.7,37.42-3.17,2.73-2.36,5.32-5.07,7.33-8.05,8.5-12.57,13.08-26.33,11.75-41.71-.28-3.23,1.34-5.4,4.07-5.56,2.43-.14,4.35,1.64,4.56,4.33,1.55,19.74-4.17,37.29-16.76,52.39-12.03,14.42-30.75,18.75-47.9,11.8-13.53-5.49-20.21-19.28-15.44-32.4.95-2.62,2.76-4.96,4.37-7.3,1.46-2.12,1.39-3.19-.97-4.57-4.37,4.09-7.82,8.94-10.82,14.13-8.45,14.58-13.22,30.49-16.6,46.87-3.36,16.27-4.97,32.75-5.73,49.32-.21,4.51-2.33,6.61-6.86,6.67-2.52.03-5.04.07-7.55-.02-3.6-.12-5.87-2.25-6.04-5.83-.95-19.96-.72-39.92.89-59.84,1.25-15.5,3.3-30.88,7.55-45.88,1.08-3.81,2.4-7.56,3.88-12.18-8.61.63-16.78,1.18-24.95,1.85-2.37.2-2.89,1.82-2.88,4.07.06,36.8.04,73.61.04,110.42,0,5.58-1.05,6.61-6.72,6.61-4.77,0-9.55.02-14.32-.01-3.72-.03-5.2-1.5-5.29-5.2-.04-1.65-.02-3.3-.02-4.95C.01,168.75,0,87.94,0,7.13c0-.87-.02-1.74.05-2.6C.28,1.73,1.69.16,4.51.1c5.81-.12,11.63-.14,17.44,0,3.13.07,4.41,1.83,4.41,5.5,0,26.13,0,52.26,0,78.38,0,10.24,0,20.49,0,30.73,0,.94,0,1.89,0,2.91Zm36.43,4.78c-1.68,0-2.99-.15-4.25.02-11.16,1.52-22.33,2.97-33.46,4.7-5.78.9-7.35-.16-7.35-5.97,0-36.27,0-72.54,0-108.81,0-1.11,0-2.21,0-3.44h-8.89v241.94h8.89c0-1.15,0-2.17,0-3.19,0-31.59,0-63.17,0-94.76,0-4.77-.14-9.55.08-14.31.07-1.49.71-3.31,1.74-4.32,3.14-3.06,7.13-4.58,11.5-4.77,8.4-.36,16.81-.54,25.2-.89.99-.04,2.26-.37,2.87-1.05,1.33-1.45,2.31-3.21,3.66-5.15Zm-24.18-76.24c-.24.06-.47.11-.71.17,1.07,4.42,1.79,8.97,3.31,13.23,1.52,4.28,5.24,5.68,9.67,5.45,4.11-.21,6.72-2.49,7.79-6.17.98-3.37,1.38-6.93,1.8-10.44.27-2.25,1.04-4.03,3.14-5.01,2.06-.95,4-.66,5.89.63,1.57,1.07,3.18,2.14,4.91,2.89,3.53,1.53,6.05.93,8.11-2.3,1.52-2.37,2.64-5.06,3.54-7.74.79-2.34,1.95-4.1,4.39-4.64,2.57-.57,4.38.7,6.1,2.58,1.85,2.02,3.94,3.91,6.2,5.44,2.27,1.53,4.78,1.17,7.07-.43,6.57-4.58,7.16-10.34,1.37-15.82-2.18-2.06-4.68-3.9-7.28-5.41-7.11-4.14-14.85-6.62-22.97-7.89-6.15-.97-12.28-.92-18.3.86-14.57,4.31-23.97,17.87-24.02,34.59Z"/><path class="uuid-b027f8e9-9f03-4a7d-bf50-55d2314f526c" d="m137.29,92.97c-.23,1.87-1.55,3.15-3.74,3.12-9-.14-15.99,3.76-21.72,10.42-.87,1.02-2.06,1.91-3.28,2.44-1.68.73-3.31.2-4.29-1.41-1.03-1.68-.79-3.31.66-4.7,1.75-1.67,3.49-3.35,5.25-5.01,6.49-6.13,14.23-9.06,23.13-8.97,2.58.03,4.08,1.48,4,4.11Z"/><path class="uuid-b027f8e9-9f03-4a7d-bf50-55d2314f526c" d="m129.89,130.5c-7.5-.12-12.78-1.63-17.74-4.31-1.44-.78-2.9-1.53-4.41-2.17-1.99-.85-2.79-2.33-2.3-4.37.51-2.11,2.13-2.93,4.16-2.62,1.16.17,2.35.66,3.35,1.29,7.45,4.63,15.29,6.23,23.83,3.46,2.35-.76,4.18.35,4.73,2.38.57,2.07-.38,3.92-2.76,4.53-3.5.89-7.09,1.47-8.87,1.82Z"/><path class="uuid-b027f8e9-9f03-4a7d-bf50-55d2314f526c" d="m62.8,122.4c-1.34,1.95-2.33,3.7-3.66,5.15-.62.67-1.88,1.01-2.87,1.05-8.4.35-16.81.53-25.2.89-4.37.19-8.37,1.7-11.5,4.77-1.03,1.01-1.68,2.83-1.74,4.32-.22,4.76-.08,9.54-.08,14.31,0,31.59,0,63.17,0,94.76,0,1.02,0,2.04,0,3.19h-8.89V8.9h8.89c0,1.23,0,2.33,0,3.44,0,36.27,0,72.54,0,108.81,0,5.8,1.57,6.86,7.35,5.97,11.13-1.72,22.3-3.18,33.46-4.7,1.26-.17,2.57-.02,4.25-.02Z"/><path class="uuid-b027f8e9-9f03-4a7d-bf50-55d2314f526c" d="m38.61,46.16c.05-16.72,9.46-30.28,24.02-34.59,6.02-1.78,12.15-1.83,18.3-.86,8.12,1.28,15.86,3.75,22.97,7.89,2.6,1.51,5.09,3.35,7.28,5.41,5.8,5.48,5.21,11.24-1.37,15.82-2.29,1.59-4.8,1.96-7.07.43-2.27-1.53-4.35-3.42-6.2-5.44-1.72-1.88-3.53-3.15-6.1-2.58-2.43.54-3.6,2.3-4.39,4.64-.9,2.68-2.02,5.37-3.54,7.74-2.07,3.23-4.59,3.83-8.11,2.3-1.73-.75-3.34-1.82-4.91-2.89-1.89-1.29-3.83-1.59-5.89-.63-2.1.97-2.86,2.76-3.14,5.01-.43,3.51-.83,7.07-1.8,10.44-1.07,3.68-3.67,5.96-7.79,6.17-4.42.23-8.14-1.17-9.67-5.45-1.52-4.26-2.24-8.81-3.31-13.23.24-.06.47-.11.71-.17Z"/></g></g></svg>
+              <div>Adrenal</div>
+            </a>
+            <a class="tablink" onclick="openType(this, 'Post-Pill');">
+              <svg class="typeicon" id="uuid-64b81397-1edf-4cd6-a6f6-4ca6626765d4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 317.5 272.05"><defs><style>.uuid-88b021d8-0a4f-4699-bbd6-cc26b97f7508,.uuid-c6dafc9d-d0d4-4352-afb2-6c95bb99b5f3{fill:#293275;}.uuid-c6dafc9d-d0d4-4352-afb2-6c95bb99b5f3{opacity:.75;}</style></defs><g id="uuid-f708d85e-145e-4a9b-8d93-ed2cd2bab75e"><g id="uuid-441128a2-fc5b-42c4-8f6f-560cb8145196"><path class="uuid-88b021d8-0a4f-4699-bbd6-cc26b97f7508" d="m163.35,143.54c6.39-15.91,15.78-28.86,27.6-40.11,15.66-14.9,34.18-24.69,54.96-30.24,1.48-.4,3.94.24,5.01,1.32,16.73,16.95,33.61,33.76,49.83,51.18,17.96,19.28,21.67,47.91,10.16,71.72-11.35,23.47-35.57,37.87-61.13,36.34-15.41-.92-15.31-.97-15.51-16.09-.13-10.15-.82-20.29-1.15-30.44-.42-13.14-7.27-22.13-18.28-28.39-14.7-8.36-30.74-12.54-47.37-14.81-1.14-.16-2.29-.27-4.13-.49Z"/><path class="uuid-c6dafc9d-d0d4-4352-afb2-6c95bb99b5f3" d="m242.97,66.43c-39.6,12.22-67.48,37.09-85.53,73.3-1.25,2.51-2.72,3.58-5.42,2.92-.16-.04-.33-.05-.5-.04-11.99.82-21.16-3.76-28.64-13.31-5.62-7.17-12.72-13.15-18.98-19.83-24.46-26.1-23.45-66.72,2.19-91.33,25.71-24.67,66.27-24.12,91.38,1.35,14.61,14.82,29.07,29.79,43.59,44.7.56.57,1.04,1.22,1.91,2.24Z"/><path class="uuid-88b021d8-0a4f-4699-bbd6-cc26b97f7508" d="m.18,193.36c6.96,11.9,18.18,17.42,29.85,22.07,21.76,8.68,44.66,11.99,67.89,13.14,32.85,1.62,65.28-.78,96.66-11.57,3.61-1.24,7.16-2.74,10.62-4.37,9.28-4.41,17.76-9.82,23.36-19.33,0,9.7-.95,19.51.21,29.06,2.17,17.88-7.35,27.16-22.03,33.64-16.79,7.41-34.49,11.25-52.57,13.42-36.7,4.41-73.28,3.73-109.16-5.72-11.44-3.01-22.43-8.26-33.06-13.6C3.49,245.86-.46,238.29.04,228.23c.58-11.6.14-23.25.14-34.88Z"/><path class="uuid-c6dafc9d-d0d4-4352-afb2-6c95bb99b5f3" d="m43.42,212.48c21.84-8.09,43.67-16.19,65.51-24.28,26.39-9.78,52.75-19.61,79.2-29.22,2.25-.82,5.5-1.01,7.5.02,7.19,3.73,14.69,7.33,20.87,12.42,9,7.42,8.77,17.33.52,25.64-7.35,7.41-16.7,11.5-26.37,14.74-29.99,10.04-61,12.65-92.28,10.47-16.86-1.17-33.55-4.82-50.31-7.41-1.58-.24-3.09-.9-4.63-1.36,0-.34,0-.68,0-1.02Z"/><path class="uuid-c6dafc9d-d0d4-4352-afb2-6c95bb99b5f3" d="m180.67,154.04c-14.22,5.29-27.11,10.08-39.99,14.86-34.79,12.9-69.61,25.74-104.35,38.77-3.62,1.36-6.76,1.6-9.84-.63-5.76-4.14-12.04-7.8-16.96-12.79-5.65-5.74-5.7-13.55-.24-19.47,4.41-4.78,9.82-9.07,15.57-12.09,17.81-9.34,37.32-12.98,57.1-15.07,32.03-3.38,63.85-2.33,95.27,5.34.63.15,1.23.38,3.43,1.08Z"/></g></g></svg>
+              <div>Post-Pill</div>
+            </a>
+            
+          </div>
+         
+          <div id="InsulinResistance" class="types" style="display:none">
+            <h2>Insulin Resistance</h2>
+            <div class="symptoms">
+              <img src="images/ir-symptoms-01.png" alt="irregular periods - symptom of insulin resistance type of PCOS" height="120px" width="120px">
+              <img src="images/ir-symptoms-02.png" alt="facial hair - symptom of insulin resistance type of PCOS" height="120px" width="120px">
+              <img src="images/ir-symptoms-03.png" alt="weight gain - symptom of insulin resistance type of PCOS" height="120px" width="120px">
+              <img src="images/ir-symptoms-04.png" alt="cravings - symptom of insulin resistance type of PCOS" height="120px" width="120px">
+              <img src="images/ir-symptoms-05.png" alt="hair loss - symptom of insulin resistance type of PCOS" height="120px" width="120px">
+            </div>
+            <p>This is the <strong>predominant</strong> form of polycystic ovary syndrome (PCOS). Insulin resistance, also referred to as hyperinsulinemia, occurs when <strong>insulin levels in the body are elevated</strong> beyond normal levels. This condition arises when our cells become less responsive to the effects of insulin, prompting the pancreas to produce increasing amounts of insulin until the cells properly respond.</p>
+          </div>
+        
+          <div id="Inflammatory" class="types" style="display:none">
+            <h2>Inflammatory</h2>
+            <div class="symptoms">
+              <img src="images/inf-symptoms-06.png" alt="bloating - symptom of inflammatory type of PCOS" height="120px" width="120px">
+              <img src="images/inf-symptoms-07.png" alt="acne - symptom of inflammatory type of PCOS" height="120px" width="120px">
+              <img src="images/inf-symptoms-08.png" alt="cysts - symptom of inflammatory type of PCOS" height="120px" width="120px">
+              <img src="images/inf-symptoms-09.png" alt="stubborn weight - symptom of inflammatory type of PCOS" height="120px" width="120px">
+            </div>
+            <p> Inflammatory PCOS is characterized by <strong>chronic inflammation</strong>, which stimulates the ovaries to produce <strong>excessive testosterone</strong>, leading to physical symptoms and difficulties with ovulation. Typically, blood tests reveal elevated inflammatory markers, such as a <strong>CRP (C-reactive protein) level > 5</strong>.</p>
+          </div>
+        
+          <div id="Adrenal" class="types" style="display:none">
+            <h2>Adrenal</h2>
+            <div class="symptoms">
+              <img src="images/adr-symptoms-10.png" alt="fatigue - symptom of adrenal type of PCOS" height="120px" width="120px">
+              <img src="images/adr-symptoms-11.png" alt="mood swings - symptom of adrenal type of PCOS" height="120px" width="120px">
+              <img src="images/adr-symptoms-12.png" alt="depression - symptom of adrenal type of PCOS" height="120px" width="120px">
+              <img src="images/adr-symptoms-13.png" alt="anxiety - symptom of adrenal type of PCOS" height="120px" width="120px">
+              
+            </div>
+              <p>This attributes to an <strong>abnormal stress response</strong> and is observed in approximately 10% of diagnosed cases. In this type, there is a specific <strong>elevation of DHEA-S</strong>, which is another androgen produced by the adrenal glands. It is unfortunate that this specific androgen is often overlooked in routine testing unless an individual seeks the expertise of an endocrinologist or another specialist.</p>
+          </div>
+
+          <div id="Post-Pill" class="types" style="display:none">
+            <h2>Post-Pill</h2>
+            <div class="symptoms">
+              <img src="images/pp-symptoms-14.png" alt="scanty periods - symptom of post-pill type of PCOS" height="120px" width="120px">
+              <img src="images/pp-symptoms-15.png" alt="weight gain - symptom of post-pill type of PCOS" height="120px" width="120px">
+              <img src="images/pp-symptoms-16.png" alt="facial hair - symptom of post-pill type of PCOS" height="120px" width="120px">
+              <img src="images/pp-symptoms-17.png" alt="fatigue - symptom of post-pill type of PCOS" height="120px" width="120px">
+              <img src="images/pp-symptoms-18.png" alt="hair loss - symptom of post-pill type of PCOS" height="120px" width="120px">
+            </div>
+              <p> Post-pill PCOS develops in certain individuals after <strong>discontinuing the use of oral contraceptive pills</strong>. This is often associated with specific oral contraceptives which contain <strong>synthetic progestins.</strong> Upon discontinuation of the pill, the ovaries experience imbalance, leading to a natural surge in androgens, which can manifest as typical PCOS symptoms.</p>
+          </div>
+          
+    </section>
+    <section class="container-3">
+      
+      <h1>NOURISH YOURSELF WITH LOVE</h1>
+      <img class="spoonful" src="images/spoonful.gif" alt="spoonful of hearts">
+      <p>Balancing your diet with PCOS doesn't involve deprivation or hunger; it's about embracing consistent guidelines that introduce nourishing foods to support your hormones. When planning your meals and snacks, aim for a well-balanced combination of the following:</p>
+         <ul>
+             <li><strong>High Quality Protein:</strong> Include sources like eggs, legumes, pasture-raised poultry, and wild-caught seafood.</li>
+             <li><strong>Fat:</strong> Incorporate healthy fats from avocado, nuts, seeds, nut/seed butter, ghee, olives, and extra virgin olive oil.</li>
+             <li><strong>Fiber:</strong> Opt for fiber-rich options such as all types of veggies, fruits, and complex carbs like quinoa, buckwheat, millet, and oats.</li>
+             <li><strong>Herbs:</strong> Include cinnamon, spearmint, basil and rosemary wherever possible. </li>
+        </ul>
+        <div class="food-tabs">
+          <a class="food-sections" href="index.html#managing-tips">Management Tips</a>
+          <a class="food-sections" href="index.html#avoidfoods">Foods to Avoid</a>
+          <a class="food-sections" href="index.html#supplements">Supplements</a>
+          <a class="food-sections" href="recipes.html">Cooking Tips</a>
+          <a class="food-sections" href="recipes.html#recipes">Recipes</a>
+        </div>
+      
+    
+
+      <div class="food-tips" id="managing-tips">
+
+
+        <div class="fatfirst">
+          <h2>Start your day right!</h2>
+          <img src="images/fat-first.png" alt="healthy sources of fats: coconut oil, olives, nuts and seeds, ghee" height="100px">
+          <p>Have a tablespoon of a <strong>healthy source of fat (i.e. coconut oil, grass-fed ghee or butter, handful of nuts or seeds)</strong> on an empty stomach. Healthy fats are essential for hormone production and stabilising blood sugar levels.</p>
+          <div class="cure-tip">
+            <img src="images/arrow.png" height="60px" width="60px">
+            <p>Effective for <strong>all</strong> types of PCOS</p> 
+          </div>
+        </div>
+
+        <div class="supplements" id="supplements">
+          <h2>Supplements Recommended for PCOS</h2>
+          <p>Vitamins and Minerals like Vitamin D3, Vitamin B12, Magnesium, Iron and Zinc are essential for females, with or without PCOS. It is crucial to consult with a healthcare professional before adding any supplement to your PCOS management plan. <br> <strong>Click <img src="images/click.png" height="20px"> on them for more insight!</strong></p>
+          
+          <div class="supplement">
+          <h3>Inositol</h3>
+          <p class="supplements-info"> Look for Inositol formulated with a 40:1 ratio of myo-inositol to d-chiro-inositol, mirroring the body's natural balance. This is particularly beneficial for addressing insulin resistance, aiding in the reduction of testosterone levels, and enhancing ovulation!</p>
+          </div>
+
+          <div class="supplement">
+          <h3>Omega-3</h3>
+          <p class="supplements-info">
+            Research indicates that Omega-3 supports optimal weight, as well as the well-being of hair, skin, and insulin levels. Scientific studies highlight how DHA contributes to maintaining healthy testosterone levels and a positive mood.</p>
+          </div>
+
+          <div class="supplement">
+          <h3>Berberine</h3>
+          <p class="supplements-info"> Berberine initiates AMPK activation (signifying the regulation of cellular metabolism) and enhances glycolysis (which dictates the pace of glucose breakdown in the body for energy production), ultimately resulting in reduced insulin resistance.
+          </div>
+
+          <div class="supplement">
+            <h3>Coenzyme Q10 (CoQ10)</h3>
+            <p class="supplements-info"> CoQ10 is an antioxidant that supports cellular energy production and may help with insulin sensitivity.</p>
+            </div>
+          </div>
+
+
+        <img src="images/seed-cycling.png" alt="the seed cycle i.e. consuming 1 tablespoon of pumpkin seeds and flax seeds in the follicular phase and and 1 tablespoon of sunflower and sesame seeds in the luteal phase of your menstrual cycle" class="seed-cycling-img">
+
+        <div class="seedcycling">
+          <h2>Seed Cycling</h2>
+          <p>Seed cycling involves having particular seeds during the primary phases of your menstrual cycle (follicular and luteal) to <strong>support the harmonious balance of estrogen and progesterone.</strong> This gentle and natural approach can alleviate PMS symptoms, enhance fertility, trigger menstruation if absent (amenorrhea), and address other symptoms arising from hormonal imbalances.</p>
+          <div class="cure-tip">
+            <img src="images/arrow.png" height="60px" width="60px">
+            <p>Most effective for <strong>Post-Pill</strong> type of PCOS</p> 
+          </div>
+        </div>
+        
+
+        <div class="avoidgluten" id="avoidfoods">
+          <h2>Avoid Gluten</h2>
+          <img src="images/gluten-free.png" alt="gluten-free icon" height="100px">
+          <p><strong>Gluten</strong>, found in wheat, barley, and rye, can increase gut permeability, causing a leaky gut. 
+            It is linked to heightened brain antibodies, <strong>causing inflammation and potential neurological issues.</strong>
+            Modern wheat differs from its predecessors due to processing changes, impacting fiber and gluten levels.</p>
+            <div class="cure-tip">
+              <img src="images/arrow.png" height="60px" width="60px">
+              <p>Most effective for <strong>Inflammatory</strong> type of PCOS</p> 
+            </div>
+            <div class="tip">
+            <img src="images/lightbulb.png" height="60px" width="60px">
+            <p>If you'd like wheat/bread to be a part of your diet, switch to Sourdough Bread. It has higher nutrient content, a reduced likelihood of blood sugar spikes, <strong>lower gluten levels</strong>, and enhanced digestibility compared to bread crafted with baker's yeast. </p>
+          </div>
+        </div>
+
+          <div class="avoiddairy">
+            <h2>Avoid Dairy</h2>
+            <img src="images/dairy-free.png" alt="dairy-free icon" height="100px">
+            <p><strong>Dairy</strong> products contain elevated levels of hormones like prolactin, estrogens, progesterone, corticoids, androgens, insulin-like growth factor-1, and prostaglandins. Excessive intake of dairy can <strong>disrupt hormonal balance</strong> and lead to abnormal cell formation.</p>
+            <div class="cure-tip">
+              <img src="images/arrow.png" height="60px" width="60px">
+              <p>Most effective for <strong>Inflammatory</strong> type of PCOS</p> 
+            </div>
+            <div class="tip">
+              <img src="images/lightbulb.png" height="60px" width="60px">
+              <p>Grass-Fed Ghee and Butter are exceptions with low lactose and casein content. When consumed moderately, they also provide health advantages like high-vitamin content and production of bile, flushing out old hormones. </p>
+            </div>
+          </div>
+
+          <div class="nosugar">
+            <h2>Eliminate Sugar</h2>
+            <img src="images/sugar-free.png" alt="sugar free icon" height="100px">
+            <p>Eliminating sugar from your diet is the most ideal way to go. Sugar spikes insulin levels but it also contributes to high blood pressure, high levels of triglycerides, and high levels of C-reactive protein, all of which have been linked to <strong>oxidative stress and inflammation.</strong></p>
+            <div class="cure-tip">
+              <img src="images/arrow.png" height="60px" width="60px">
+              <p>Effective for <strong>all</strong> types of PCOS</p> 
+            </div>
+            <div class="tip">
+              <img src="images/lightbulb.png" height="60px" width="60px">
+              <p>Sugar Cravings are very common with PCOS, so if it is something you can't eliminate at first, switch to more natural sources like coconut sugar, dates, agave nectar, organic honey, etc.
+                Pair it with a protein or fat source to avoid sugar spikes!
+              </p>
+            </div>
+          </div>
+
+
+          <div class="caffeine">
+            <img src="images/spearmint.png" alt="spearmint tea" height="80px">
+            <h2>Limit Caffeine</h2>
+            <h3>Caffeine can hinder liver function, potentially causing hormone accumulation and worsening health issues.
+              <br>Replace with a cup of spearmint tea - helps reduce androgens, thus reducing acne and facial hair.
+            </h3>
+          </div>
+
+            <div class="recipeslink">
+              <h1>WHAT SHOULD I EAT THEN? HELP!</h1>
+              <a href="recipes.html">RECIPES AND COOKING TIPS >></a>
+            </div>
+  
+          </div>
+    </section>
+
+    <section class="container-4" id="managing-workout">
+      
+      <h1>LOVE, RELAX AND BREATHE!</h1>
+      <img class="breathe" src="images/breathe.gif" width="45%" alt="woman breathing in and out">
+      <p>To maintain a healthy cycle, it's important to follow a manageable exercise routine. This should include enjoyable activities, classes, adequate rest days, and gentle mind-body exercises.
+       It's important to be easy on yourself and listen to your body! </p>
+      
+      <div class="yoga">
+      <h2>Yoga</h2>
+      <p>Yoga has the potential to have a profound impact on PCOS. The calming and meditative aspects of yoga help maintain a state of relaxation in our bodies, thereby reducing stress hormone levels even during exercise. As a result, we can enjoy the numerous advantages of yoga without experiencing the post-workout anxiety often associated with intense workouts for individuals with PCOS. <strong>Some poses that bring hormonal balance:</strong> </p>
+      
+      <div class="slider-yoga">
+
+        <div class="card">
+          <img src="images/swipe.png" height="50px">
+        </div>
+        <div class="card">
+          <h3>Chakravakasana <br>(Cat-Cow Pose)</h3>
+          <img src="images/cat-cow.gif" height="200px">
+        </div>
+        <div class="card">
+          <h3>Adho Mukha Svanasana <br>(Downward-Facing Dog Pose)</h3>
+          <img src="images/downward-dog.png" height="200px">
+        </div>
+        <div class="card">
+          <h3>Malasana <br>(Garland Pose)</h3>
+          <img src="images/garland.png" height="200px">
+        </div>
+        <div class="card">
+          <h3>Setu Bandhasana <br>(Bridge Pose)</h3>
+          <img src="images/bridge.png" height="200px">
+        </div>
+        <div class="card">
+          <h3>Dhanurasana <br>(Bow Pose)</h3>
+          <img src="images/bow.png" height="200px">
+        </div>
+        <div class="card">
+          <h3>Baddhakonasana <br>(Butterfly Pose)</h3>
+          <img src="images/butterfly.png" height="200px">
+        </div>
+        <div class="card">
+          <h3>Supta Baddhakonasana <br>(Reclined Butterfly Pose)</h3>
+          <img src="images/reclinedbutterfly.png" height="200px">
+        </div>
+        <div class="card">
+          <h3>Paripurna Navasana <br>(Boat Pose)</h3>
+          <img src="images/boat.png" height="200px">
+        </div>
+        <div class="card">
+          <h3>Balasana <br>(Child Pose)</h3>
+          <img src="images/child.png" height="200px">
+        </div>
+      </div>
+
+      </div>
+
+      <div class="exercise">
+      <img src="images/workout-cycling.png" class="workout-cycling-img" alt="workouts as per your menstrual cycle - Cardio and HIIT during follicular phase. HIIT, Weight Training and Circuit Training during Ovulation. Pilates, Yoga and Resistance Training during the Luteal phase. Pilates, Yoga and Resistance Training during Menstrual Phase.">
+
+      <div class="workout-cycling">
+        <h2> Workout Smarter, Not Harder.
+          <br> Cycling your Workouts
+        </h2>
+        <p>Throughout the menstrual cycle, <strong>hormonal fluctuations lead to varying responses to exercise in the female body, impacting calorie burn rates, stress levels, and the immune response.</strong> <br> Cycle syncing, aligning your workouts with your menstrual cycle, can help balance hormones and improve various aspects of your fitness journey, from fat burning to reducing symptoms and boosting energy levels. </p>
+      </div>
+
+      <div class="exercise-tips">
+        <h2>Workouts: Keep it Simple!</h2>
+        <img src="images/simple-workout.png" height="180px" width="180px" alt="woman holding dumbbells and half-squatting">
+        <p>Due to stubborn weight, Women with PCOS often think they must do high-intensity workouts. Excessive exercising and overtraining can lead to irregular periods by causing a surge in cortisol levels, disrupting your hormonal balance.
+          <br><strong>Instead, choose workouts that are  strengthening, slow-weighted, and keeps your heart rate at bay. </strong> </p>
+      </div>
+
+      <div class="managing-stress">
+        <h2>Keep Calm and Smile!</h2>
+        <img src="images/stress-less.png" height="180px" alt="woman meditating">
+        <p> Prioritizing our mental well-being holds significant importance. When our cortisol levels are lower, our hormonal balance is enhanced. Engaging in activities like <strong>journaling, meditation, and ensuring adequate sleep</strong> plays a pivotal role in stress reduction. Additionally, moderating caffeine and alcohol intake can contribute to regulating our circadian rhythm, ultimately assisting in more effective symptom management.</p>
+      </div>
+    </div>
+    </section>
+
+    <section class="quiz-link">
+      <h1>PUT YOUR PCOS KNOWLEDGE TO TEST</h1>
+      <h2>Get ready for an enjoyable quiz and uncover common myths surrounding PCOS! </h2>
+      <a href="quiz.html"><strong>GO! >></strong></a>
+    </section>
+
+    <footer>
+      <h2>In case you missed out on anything...</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#mythsandfacts">Bust PCOS Myths</a></li>
+        <li><a href="index.html#managing-tips">Managing Diet</a></li>
+        <li><a href="index.html#supplements">Supplements</a></li>
+        <li><a href="recipes.html">Cooking Tips</a></li>
+        <li><a href="recipes.html#recipes">Recipes</a></li>
+        <li><a href="index.html#managing-workout">Lifestyle and Workout</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </footer>
+    <div class="credits">
+    <a href="credits.html"><svg class="cred-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.5 47.5" id="heart"><defs><clipPath id="a"><path d="M0 38h38V0H0v38Z"></path></clipPath></defs><g clip-path="url(#a)" transform="matrix(1.25 0 0 -1.25 0 47.5)"><path fill="#dd2e44" d="M3.067 25.68c0 8.799 12.184 12.06 15.933 1.874 3.749 10.186 15.933 6.925 15.933-1.874C34.933 16.12 19 3.999 19 3.999S3.067 16.12 3.067 25.68"></path></g></svg>Credits</a>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

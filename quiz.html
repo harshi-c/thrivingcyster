@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Living with PCOS: Management Tips & Tricks">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <title>Thriving Cyster: PCOS Quiz! </title>
+</head>
+<body>
+    <p class="disclaimer"> <strong>Disclaimer:</strong> The information provided on this website is not a medically approved way to manage PCOS. For more tailored and accurate advice, please consult your GP or a specialist. </p>
+    <header>
+        <img class="logo" src="images/logo.png" alt="thriving cyster logo">
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#mythsandfacts">Bust PCOS Myths</a></li>
+        <li><a href="index.html#managing-tips">Managing Diet</a></li>
+        <li><a href="index.html#supplements">Supplements</a></li>
+        <li><a href="recipes.html">Cooking Tips</a></li>
+        <li><a href="recipes.html#recipes">Recipes</a></li>
+        <li><a href="index.html#managing-workout">Lifestyle + Workout</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+  </nav>
+
+    <section class="quiz-container">
+        <h1>Test your PCOS Knowledge!</h1>
+        <p>This quiz is intended to provide general information about PCOS for educational purposes. It's important to note that symptoms and treatment options for PCOS can vary from person to person.</p>
+        <form id="quiz-form">
+
+          <div class="question">1. What does PCOS stand for?</div>
+          <div class="options">
+            <label><input type="radio" name="q1" value="a"> Polycystic Ovary Syndrome</label>
+            <label><input type="radio" name="q1" value="b"> Personal Care and Optimal Health</label>
+            <label><input type="radio" name="q1" value="c"> Preventing Cardiovascular Overload</label>
+          </div>
+
+          <hr>
+
+          <div class="question">2. Which of the following is a common symptom of PCOS?</div>
+          <div class="options">
+            <label><input type="radio" name="q2" value="a"> Weight loss</label>
+            <label><input type="radio" name="q2" value="b"> Irregular periods</label>
+            <label><input type="radio" name="q2" value="c"> Low blood pressure</label>
+          </div>
+
+          <hr>
+
+          <div class="question">3. Which of the following is NOT a type of PCOS?</div>
+          <div class="options">
+            <label><input type="radio" name="q3" value="a"> Adrenal </label>
+            <label><input type="radio" name="q3" value="b"> Amenorrhea </label>
+            <label><input type="radio" name="q3" value="c"> Inflammatory</label>
+          </div>
+
+          <hr>
+
+          <div class="question">4. Which of the following food items is NOT recommended for a PCOS diet? </div>
+          <div class="options">
+            <label><input type="radio" name="q4" value="a">Avocado</label>
+            <label><input type="radio" name="q4" value="b">Sweet Potatoes</label>
+            <label><input type="radio" name="q4" value="c">Sugar</label>
+          </div>
+
+          <div class="question">5. Which of the following is recommended for a PCOS diet? </div>
+          <div class="options">
+            <label><input type="radio" name="q5" value="a">Spearmint Tea</label>
+            <label><input type="radio" name="q5" value="b">Refined Vegetable Oil</label>
+            <label><input type="radio" name="q5" value="c">Alcohol</label>
+          </div>
+
+          <div class="question">6. Which of these exercises is recommended during the Menstrual Phase of your cycle? </div>
+          <div class="options">
+            <label><input type="radio" name="q6" value="a">Cardio</label>
+            <label><input type="radio" name="q6" value="b">HIIT</label>
+            <label><input type="radio" name="q6" value="c">Pilates</label>
+          </div>
+
+          <div class="question">7. Which of these seeds are recommended in the Follicular Phase of your cycle? </div>
+          <div class="options">
+            <label><input type="radio" name="q7" value="a">Sunflower Seeds</label>
+            <label><input type="radio" name="q7" value="b">Pumpkin Seeds</label>
+            <label><input type="radio" name="q7" value="c">Sesame Seeds</label>
+          </div>
+
+          <div class="question">8. Why is an Inositol supplement beneficial for PCOS? </div>
+          <div class="options">
+            <label><input type="radio" name="q8" value="a">Beneficial for adressing Post-Pill PCOS, aiding in increasing haemoglobin levels.</label>
+            <label><input type="radio" name="q8" value="b">Beneficial for adressing Inflammatory PCOS, aiding in surpressing progestorone. </label>
+            <label><input type="radio" name="q8" value="c">Beneficial for addressing insulin resistance, aiding in the reduction of testosterone levels. </label>
+          </div>
+
+      
+          <button type="button" id="submit-btn">Submit</button>
+          <button type="button" id="refresh-btn">Retry</button>
+        </form>
+        <div class="result" id="quiz-result"></div>
+    </section>
+
+    
+
+    <footer>
+      <h2>In case you missed out on anything...</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#mythsandfacts">Bust PCOS Myths</a></li>
+        <li><a href="index.html#managing-tips">Managing Diet</a></li>
+        <li><a href="index.html#supplements">Supplements</a></li>
+        <li><a href="recipes.html">Cooking Tips</a></li>
+        <li><a href="recipes.html#recipes">Recipes</a></li>
+        <li><a href="index.html#managing-workout">Lifestyle and Workout</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </footer>
+    
+    <div class="credits">
+      <a href="credits.html"><svg class="cred-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.5 47.5" id="heart"><defs><clipPath id="a"><path d="M0 38h38V0H0v38Z"></path></clipPath></defs><g clip-path="url(#a)" transform="matrix(1.25 0 0 -1.25 0 47.5)"><path fill="#dd2e44" d="M3.067 25.68c0 8.799 12.184 12.06 15.933 1.874 3.749 10.186 15.933 6.925 15.933-1.874C34.933 16.12 19 3.999 19 3.999S3.067 16.12 3.067 25.68"></path></g></svg>Credits</a>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
+
+      
+      
+      
+      
+      
+      
